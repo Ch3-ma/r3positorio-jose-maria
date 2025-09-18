@@ -1,0 +1,47 @@
+/* Centrar el recorte de las imágenes del carrusel */
+.carousel-inner img {
+  object-position: center;
+}
+
+/* Altura del carrusel responsiva */
+@media (max-width: 768px) {
+  .carousel-inner img { height: 320px; }
+}
+@media (max-width: 480px) {
+  .carousel-inner img { height: 240px; }
+}
+
+/* Respetar usuarios con “reducir movimiento” */
+@media (prefers-reduced-motion: reduce) {
+  .navbar-brand img,
+  .logo-click {
+    transition: none;
+  }
+}
+
+/* Asegurar contraste del botón primario */
+.btn-primary {
+  color: #fff;
+}
+
+/* ================= OFFCANVAS ================= */
+/* Ancho del offcanvas en pantallas ≥992px */
+@media (min-width: 992px) {
+  #offcanvasRight.offcanvas-end {
+    width: 420px;
+  }
+}
+
+body{
+    background-image: url("https://images.wallpapersden.com/image/download/japan-hd-minimalist_bWdqameUmZqaraWkpJRmbmdlrWZlbWU.jpg");
+    background-size: cover; /*que ocupe todo*/
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+
+}
+
+.card, .acording_item, .model-content, .offcanvas {
+background-color: antiquewhite(255,255,255,0.9);
+backdrop-filter: blur(2px);
+}
